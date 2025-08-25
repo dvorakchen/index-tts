@@ -226,6 +226,13 @@ text="大家好，我现在正在bilibili 体验 ai 科技，说实话，来之�
 tts.infer(voice, text, output_path)
 ```
 
+### RestAPI
+
+```sh
+podman build -t tts .
+podman run -p 8000:8000 -v ~/tmp:/app/index-tts/output_audios -d tts
+```
+
 ## Acknowledge
 1. [tortoise-tts](https://github.com/neonbjb/tortoise-tts)
 2. [XTTSv2](https://github.com/coqui-ai/TTS)
